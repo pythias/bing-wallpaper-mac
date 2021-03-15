@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  bw
+
+  Created by chenjie5 on 2017/4/12.
+  Copyright © 2017年 duo. All rights reserved.
+*/
+"CFBundleDisplayName" = "Bing壁纸";
+"CFBundleName" = "Bing壁纸";
+"CFBundleExecutable" = "Bing壁纸";
+"MenuTitleRandom" = "随机选择";
+"MenuTitleToday" = "使用今日壁纸";
+"MenuTitleStart" = "登陆时自动启动";
+"MenuTitleInfo" = "显示壁纸信息";
+"MenuTitleQuit" = "退出";

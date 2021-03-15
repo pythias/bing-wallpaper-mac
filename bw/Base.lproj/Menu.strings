@@ -1,0 +1,14 @@
+/* 
+  Menu.strings
+  bw
+
+  Created by chenjie5 on 2017/5/5.
+  Copyright © 2017年 duo. All rights reserved.
+*/
+"MenuTitleRandom" = "随机选择";
+"MenuTitleToday" = "使用今日壁纸";
+"MenuTitleStart" = "自动启动";
+"MenuTitleShow" = "显示信息";
+"MenuTitleQuit" = "退出";
+"DetailTitle" = "壁纸信息";
+"DetailButtonTitle" = "查看";

@@ -1,0 +1,14 @@
+/* 
+  Menu.strings
+  bw
+
+  Created by chenjie5 on 2017/5/5.
+  Copyright © 2017年 duo. All rights reserved.
+*/
+"MenuTitleRandom" = "Random";
+"MenuTitleToday" = "Today";
+"MenuTitleStart" = "Launch at Login";
+"MenuTitleShow" = "Detail";
+"MenuTitleQuit" = "Quit";
+"DetailTitle" = "Wallpaper";
+"DetailButtonTitle" = "Detail";
