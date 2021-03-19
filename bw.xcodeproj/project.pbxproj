@@ -31,7 +31,7 @@
 		251729C31EBC6C6700A34335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Menu.strings; sourceTree = "<group>"; };
 		251729C51EBC6C6800A34335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
 		251729C71EBC6E6000A34335 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
-		254B615D1E8FB12C00E28C97 /* bw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		254B615D1E8FB12C00E28C97 /* Bing Wallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bing Wallpaper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		254B61601E8FB12C00E28C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254B61641E8FB12C00E28C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254B61691E8FB12C00E28C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		254B615E1E8FB12C00E28C97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				254B615D1E8FB12C00E28C97 /* bw.app */,
+				254B615D1E8FB12C00E28C97 /* Bing Wallpaper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			);
 			name = bw;
 			productName = bw;
-			productReference = 254B615D1E8FB12C00E28C97 /* bw.app */;
+			productReference = 254B615D1E8FB12C00E28C97 /* Bing Wallpaper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -444,13 +444,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 22;
 				INFOPLIST_FILE = bw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bw;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bing Wallpaper";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -462,13 +462,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 22;
 				INFOPLIST_FILE = bw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bw;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bing Wallpaper";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

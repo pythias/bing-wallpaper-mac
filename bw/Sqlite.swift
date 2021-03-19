@@ -17,8 +17,13 @@ class Sqlite: NSObject {
     
     override init() {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
-        let databasePath = documentsPath.appendingPathComponent("\(kName)/db-v2.sqlite")
-        self.dbQueue = try! DatabaseQueue(path: databasePath)
+        let databasePath = documentsPath.appendingPathComponent(kName)
+        var isDir : ObjCBool = false
+        if !FileManager.default.fileExists(atPath: databasePath, isDirectory: &isDir) || !isDir.boolValue {
+            try! FileManager.default.createDirectory(atPath: databasePath, withIntermediateDirectories: true, attributes: nil)
+        }
+        let databaseFile = databasePath.appending("/db-v2.sqlite")
+        self.dbQueue = try! DatabaseQueue(path: databaseFile)
         
         //dbQueue.setupMemoryManagement(in: application)
     }
