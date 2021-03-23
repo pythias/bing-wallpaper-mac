@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "254B615C1E8FB12C00E28C97"
-               BuildableName = "bw.app"
+               BuildableName = "Bing Wallpaper.app"
                BlueprintName = "bw"
                ReferencedContainer = "container:bw.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "254B615C1E8FB12C00E28C97"
-            BuildableName = "bw.app"
+            BuildableName = "Bing Wallpaper.app"
             BlueprintName = "bw"
             ReferencedContainer = "container:bw.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "254B615C1E8FB12C00E28C97"
-            BuildableName = "bw.app"
+            BuildableName = "Bing Wallpaper.app"
             BlueprintName = "bw"
             ReferencedContainer = "container:bw.xcodeproj">
          </BuildableReference>

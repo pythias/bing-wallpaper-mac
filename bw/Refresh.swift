@@ -19,7 +19,7 @@ class Refresh: NSObject {
                 self.downloadTimerDidFire();
             }
             
-            Timer.scheduledTimer(withTimeInterval: vDownloadTimerSeconds, repeats: true) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: vRandomTimerSeconds, repeats: true) { (timer) in
                 self.randomTimerDidFire();
             }
         } else {

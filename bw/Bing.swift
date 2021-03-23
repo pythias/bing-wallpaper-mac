@@ -60,12 +60,13 @@ class Bing: NSObject {
                     return
                 }
                 
+                NSLog("got %d images from %@", images.count, mkt.rawValue)
+                
                 var imageRows = [Image]()
                 for image in images {
                     let imageRow = Image(json: image, mkt: mkt)
                     if (imageRow.save()) {
                         imageRows.append(imageRow)
-                        print("save", imageRow)
                     }
                 }
                 

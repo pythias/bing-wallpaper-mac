@@ -32,7 +32,7 @@ let kStatusItemShow = "MenuTitleShow"
 let kCacheRotationType = "rotation_type"
 let kCacheStartOnLogin = "start_on_login"
 
-let vDownloadTimerSeconds = 7200.0
+let vDownloadTimerSeconds = 3600.0
 let vRandomTimerSeconds = 1800.0
 
 let kLocalizedTableNameMenu = "Menu"
