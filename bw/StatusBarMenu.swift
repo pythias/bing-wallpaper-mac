@@ -7,15 +7,21 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 class StatusBarMenu: NSObject {
+    struct Constants {
+        static let helperBundlerId = "com.duo.bwHelper" as CFString
+    }
+    
     weak var delegate: StatusBarMenuDelegate?
     private var statusItem: NSStatusItem
     private var quitItem = NSMenuItem(title: Localized.shared().menu(kStatusItemQuit), action: #selector(quitAction), keyEquivalent: "")
     private var randomItem = NSMenuItem(title: Localized.shared().menu(kStatusItemRandom), action: #selector(randomAction(sender:)), keyEquivalent: "")
     private var todayItem = NSMenuItem(title: Localized.shared().menu(kStatusItemToday), action: #selector(todayAction(sender:)), keyEquivalent: "")
     private var infoItem = NSMenuItem(title: Localized.shared().menu(kStatusItemShow), action: #selector(infoAction(sender:)), keyEquivalent: "")
-        
+    private var autoLaunchItem = NSMenuItem(title: Localized.shared().menu(kStatusItemStart), action: #selector(autoLaunchAction), keyEquivalent: "")
+    
     init(statusBar: NSStatusBar) {
         statusItem = statusBar.statusItem(withLength: NSStatusItem.variableLength)
         statusItem.image = NSImage(named: kStatusIcon)
@@ -33,14 +39,15 @@ class StatusBarMenu: NSObject {
         statusItem.menu?.addItem(NSMenuItem.separator())
         
         self.addInfoMenu()
+        self.addAutoMenu()
         statusItem.menu?.addItem(NSMenuItem.separator())
         
         self.addQuitMenu()
         
-        self.loadRotation()
+        self.loadSaved()
     }
     
-    private func loadRotation() {
+    private func loadSaved() {
         let rotation = Cache.shared().rotationType
         switch rotation {
         case .random:
@@ -49,6 +56,10 @@ class StatusBarMenu: NSObject {
         case .today:
             self.todayItem.state = NSControl.StateValue.on
             Wallpaper.shared().today()
+        }
+        
+        if Cache.shared().startOnLogin {
+            self.autoLaunchItem.state = .on
         }
     }
     
@@ -114,8 +125,27 @@ class StatusBarMenu: NSObject {
     @objc private func quitAction() {
         delegate?.statusBarMenuDidSelectQuit()
     }
+    
+    private func addAutoMenu() {
+        autoLaunchItem.target = self
+        statusItem.menu?.addItem(autoLaunchItem)
+    }
+    
+    @objc private func autoLaunchAction() {
+        if autoLaunchItem.state == .on {
+            autoLaunchItem.state = .off
+        } else {
+            autoLaunchItem.state = .on
+        }
+        
+        let autoLaunch = (autoLaunchItem.state == .on)
+        Cache.shared().startOnLogin = autoLaunch
+        if (SMLoginItemSetEnabled(Constants.helperBundlerId, autoLaunch)) {
+            NSLog("Bing Wallpaper updated auto lauch to %d", autoLaunch)
+        }
+    }
 }
 
-protocol StatusBarMenuDelegate: class {
+protocol StatusBarMenuDelegate: AnyObject {
     func statusBarMenuDidSelectQuit()
 }

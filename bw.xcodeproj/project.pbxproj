@@ -25,7 +25,24 @@
 		25F455321E9CD3B500820D7C /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F455311E9CD3B500820D7C /* Consts.swift */; };
 		25F4553B1E9E02C000820D7C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4553A1E9E02C000820D7C /* Enums.swift */; };
 		C7BEFAE525FF2DEA00238166 /* WallpaperDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEFAE425FF2DEA00238166 /* WallpaperDetail.swift */; };
+		F500AEEB26C3957500A26557 /* AutoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500AEEA26C3957500A26557 /* AutoLauncher.swift */; };
+		F50FD85826C67D8000AC20B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FD85726C67D8000AC20B1 /* main.swift */; };
+		F50FD85A26C67E0200AC20B1 /* bwHelper.app in Copy Files */ = {isa = PBXBuildFile; fileRef = F500AEE826C3957500A26557 /* bwHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F50FD85926C67DDF00AC20B1 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				F50FD85A26C67E0200AC20B1 /* bwHelper.app in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		251729C31EBC6C6700A34335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Menu.strings; sourceTree = "<group>"; };
@@ -51,6 +68,11 @@
 		7A70B4FB182429B97C62EED3 /* Pods_bw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BEFAE425FF2DEA00238166 /* WallpaperDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDetail.swift; sourceTree = "<group>"; };
 		E879405EB76F51F74A2A9E2C /* Pods-bw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bw/Pods-bw.debug.xcconfig"; sourceTree = "<group>"; };
+		F500AEE826C3957500A26557 /* bwHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bwHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F500AEEA26C3957500A26557 /* AutoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLauncher.swift; sourceTree = "<group>"; };
+		F500AEF326C3957800A26557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F500AEF426C3957800A26557 /* bwHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bwHelper.entitlements; sourceTree = "<group>"; };
+		F50FD85726C67D8000AC20B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FC62C0A764C6750CCA992B9E /* Pods-bw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bw.release.xcconfig"; path = "Pods/Target Support Files/Pods-bw/Pods-bw.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F500AEE526C3957500A26557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				254B615F1E8FB12C00E28C97 /* bw */,
+				F500AEE926C3957500A26557 /* bwHelper */,
 				254B615E1E8FB12C00E28C97 /* Products */,
 				D26C16EC2C6B80467FADDF39 /* Pods */,
 				A6FA994BABA1888310CE08D8 /* Frameworks */,
@@ -80,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				254B615D1E8FB12C00E28C97 /* Bing Wallpaper.app */,
+				F500AEE826C3957500A26557 /* bwHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +197,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F500AEE926C3957500A26557 /* bwHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F500AEEA26C3957500A26557 /* AutoLauncher.swift */,
+				F500AEF326C3957800A26557 /* Info.plist */,
+				F500AEF426C3957800A26557 /* bwHelper.entitlements */,
+				F50FD85726C67D8000AC20B1 /* main.swift */,
+			);
+			path = bwHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +220,7 @@
 				254B615A1E8FB12C00E28C97 /* Frameworks */,
 				254B615B1E8FB12C00E28C97 /* Resources */,
 				3A55492FA3F3DDACE222D975 /* [CP] Embed Pods Frameworks */,
+				F50FD85926C67DDF00AC20B1 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -188,18 +231,41 @@
 			productReference = 254B615D1E8FB12C00E28C97 /* Bing Wallpaper.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F500AEE726C3957500A26557 /* bwHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F500AEF726C3957800A26557 /* Build configuration list for PBXNativeTarget "bwHelper" */;
+			buildPhases = (
+				F500AEE426C3957500A26557 /* Sources */,
+				F500AEE526C3957500A26557 /* Frameworks */,
+				F500AEE626C3957500A26557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bwHelper;
+			productName = bwHelper;
+			productReference = F500AEE826C3957500A26557 /* bwHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		254B61551E8FB12C00E28C97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = duo;
 				TargetAttributes = {
 					254B615C1E8FB12C00E28C97 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BM4Q5C982L;
+						ProvisioningStyle = Automatic;
+					};
+					F500AEE726C3957500A26557 = {
+						CreatedOnToolsVersion = 12.5.1;
+						DevelopmentTeam = BM4Q5C982L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -219,6 +285,7 @@
 			projectRoot = "";
 			targets = (
 				254B615C1E8FB12C00E28C97 /* bw */,
+				F500AEE726C3957500A26557 /* bwHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +298,13 @@
 				254B61651E8FB12C00E28C97 /* Assets.xcassets in Resources */,
 				251729C21EBC6C6700A34335 /* Menu.strings in Resources */,
 				25EF61761E9E2B820019E838 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F500AEE626C3957500A26557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +372,15 @@
 				254B61611E8FB12C00E28C97 /* AppDelegate.swift in Sources */,
 				25F4553B1E9E02C000820D7C /* Enums.swift in Sources */,
 				257A635B1EBC66FF00A8D97A /* Wallpaper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F500AEE426C3957500A26557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50FD85826C67D8000AC20B1 /* main.swift in Sources */,
+				F500AEEB26C3957500A26557 /* AutoLauncher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +527,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_TEAM = BM4Q5C982L;
 				INFOPLIST_FILE = bw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 2.1.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bw;
 				PRODUCT_NAME = "Bing Wallpaper";
 				SWIFT_VERSION = 5.0;
@@ -462,13 +546,67 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_TEAM = BM4Q5C982L;
 				INFOPLIST_FILE = bw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 2.1.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bw;
 				PRODUCT_NAME = "Bing Wallpaper";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F500AEF526C3957800A26557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = bwHelper/bwHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BM4Q5C982L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = bwHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bwHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F500AEF626C3957800A26557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = bwHelper/bwHelper.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BM4Q5C982L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = bwHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duo.bwHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -490,6 +628,15 @@
 			buildConfigurations = (
 				254B61831E8FB12C00E28C97 /* Debug */,
 				254B61841E8FB12C00E28C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F500AEF726C3957800A26557 /* Build configuration list for PBXNativeTarget "bwHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F500AEF526C3957800A26557 /* Debug */,
+				F500AEF626C3957800A26557 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

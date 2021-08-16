@@ -26,9 +26,9 @@ class Cache: NSObject {
         }
     }
     
-    var startOnLogin: Int {
+    var startOnLogin: Bool {
         get {
-            return UserDefaults.standard.integer(forKey: kCacheStartOnLogin)
+            return UserDefaults.standard.bool(forKey: kCacheStartOnLogin)
         } set {
             UserDefaults.standard.set(newValue, forKey: kCacheStartOnLogin)
         }
