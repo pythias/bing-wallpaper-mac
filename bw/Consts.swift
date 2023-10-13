@@ -18,13 +18,8 @@ let kBingSearchUrl = "https://www.bing.com/search?q="
 let kStatusIcon = "statusIcon"
 
 let kStatusItemQuit = "MenuTitleQuit"
-let kStatusItemQuitIcon = "quitItemIcon"
-
 let kStatusItemRandom = "MenuTitleRandom"
-let kStatusItemRandomIcon = "randomItemIcon"
-
 let kStatusItemToday = "MenuTitleToday"
-let kStatusItemTodayIcon = "todayItemIcon"
 
 let kStatusItemStart = "MenuTitleStart"
 let kStatusItemShow = "MenuTitleShow"

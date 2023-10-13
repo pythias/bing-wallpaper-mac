@@ -16,4 +16,14 @@ class System: NSObject {
     public static func setStartOnLogin(_ state: Int) {
         //SMLoginItemSetEnabled()
     }
+    
+    public static func isDarkMode() -> Bool {
+        if #available(macOS 10.14, *) {
+            return NSApp.effectiveAppearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
+        } else {
+            // Fallback for earlier versions: Light mode is default
+            return true
+        }
+    }
+
 }

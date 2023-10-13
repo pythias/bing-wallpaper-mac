@@ -1,14 +1,14 @@
 PODS:
   - Alamofire (4.9.1)
-  - GRDB.swift (4.14.0):
-    - GRDB.swift/standard (= 4.14.0)
-  - GRDB.swift/standard (4.14.0)
-  - PromiseKit (6.13.1):
-    - PromiseKit/CorePromise (= 6.13.1)
-    - PromiseKit/Foundation (= 6.13.1)
-    - PromiseKit/UIKit (= 6.13.1)
-  - PromiseKit/CorePromise (6.13.1)
-  - PromiseKit/Foundation (6.13.1):
+  - GRDB.swift (5.26.1):
+    - GRDB.swift/standard (= 5.26.1)
+  - GRDB.swift/standard (5.26.1)
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
@@ -24,9 +24,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  GRDB.swift: 8cc3ab7c8b8b4ac1761deb8dca4b51c1c9d429f8
-  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  GRDB.swift: e98cd55ec99dea5da99355d588149063e4cfa0eb
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
 
 PODFILE CHECKSUM: c78a368341b54a7be37ad2095fa0a27f8df8adb8
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.13.0

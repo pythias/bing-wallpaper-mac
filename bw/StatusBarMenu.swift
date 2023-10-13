@@ -24,13 +24,13 @@ class StatusBarMenu: NSObject {
     
     init(statusBar: NSStatusBar) {
         statusItem = statusBar.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.image = NSImage(named: kStatusIcon)
-        
+        statusItem.button?.image = NSImage(named: kStatusIcon)
+
         super.init()
         
         self.createMenu()
     }
-    
+        
     private func createMenu() {
         statusItem.menu = NSMenu()
         
@@ -64,7 +64,6 @@ class StatusBarMenu: NSObject {
     }
     
     private func addRandomMenu() {
-        randomItem.image = NSImage(named: kStatusItemRandomIcon)
         randomItem.target = self
         statusItem.menu?.addItem(randomItem)
     }
@@ -83,7 +82,6 @@ class StatusBarMenu: NSObject {
     }
     
     private func addTodayMenu() {
-        todayItem.image = NSImage(named: kStatusItemTodayIcon)
         todayItem.target = self
         statusItem.menu?.addItem(todayItem)
     }
@@ -117,7 +115,6 @@ class StatusBarMenu: NSObject {
     }
     
     private func addQuitMenu() {
-        quitItem.image = NSImage(named: kStatusItemQuitIcon)
         quitItem.target = self
         statusItem.menu?.addItem(quitItem)
     }
